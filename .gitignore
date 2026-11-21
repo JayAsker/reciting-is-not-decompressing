@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+data/*.pt
+runs/
+smoke.pt
+smoke_run/
+*.aux
+*.log
+*.out
