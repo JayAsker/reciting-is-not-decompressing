@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "This is a satirical note, not a preprint. If you must cite it, cite it as satire."
+title: "[Satire] Reciting is not decompressing: a neural LZMA2 decoder that learned the answer key and not the algorithm"
+type: software
+authors:
+  - family-names: Li
+    given-names: Jinpeng
+    orcid: "https://orcid.org/0009-0002-8236-1768"
+    affiliation: "Independent researcher"
+version: 1.0.0
+doi: "10.5281/zenodo.24423042"
+date-released: "2026-11-22"
+license: MIT
+url: "https://github.com/JayAsker/reciting-is-not-decompressing"
+repository-code: "https://github.com/JayAsker/reciting-is-not-decompressing"
+abstract: >-
+  A negative result on inverting LZMA2 with a byte-level transformer, written as satire.
+  A 2.8M-parameter model reaches 100 percent exact match on its training set and 0 percent
+  on held-out streams; a lookup table keyed on the input does the same, which is the point.
+  Nothing here is peer reviewed and nothing here is a claim about the state of the art.
+keywords:
+  - satire
+  - negative result
+  - publication bias
+  - LZMA2
+  - neural compression
+  - overfitting
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24423042"
+    description: "Zenodo record holding the note, its LaTeX source and the archived artifact"

@@ -1,0 +1,122 @@
+{
+  "meta": {
+    "n_train": 64,
+    "n_test": 512,
+    "max_len": 1024,
+    "filters": [
+      {
+        "id": 33,
+        "preset": 6
+      }
+    ],
+    "avg_raw": 512.6267361111111,
+    "avg_comp": 281.2517361111111
+  },
+  "args": {
+    "data": "data/dataset.pt",
+    "out": "runs/main",
+    "epochs": 600,
+    "batch_size": 8,
+    "lr": 0.0005,
+    "eval_every": 20,
+    "d_model": 256,
+    "layers": 3,
+    "heads": 8,
+    "len_loss": 0.1,
+    "seed": 0
+  },
+  "params": 2829569,
+  "device": "cuda",
+  "stop_epoch": 120,
+  "train_seconds": 491.6,
+  "final": {
+    "train": {
+      "n": 64,
+      "file_match": 1.0,
+      "byte_acc": 1.0,
+      "len_mae": 35.098021030426025,
+      "len_exact": 0.0
+    },
+    "test": {
+      "n": 512,
+      "file_match": 0.0,
+      "byte_acc": 0.0384360120081186,
+      "len_mae": 133.80300855636597,
+      "len_exact": 0.00390625
+    }
+  },
+  "hash_baseline": {
+    "train": {
+      "table_hit": 64,
+      "file_match": 1.0
+    },
+    "test": {
+      "table_hit": 0,
+      "file_match": 0.0
+    },
+    "table_size": 64
+  },
+  "time_model": {
+    "per_sample_bs1": 0.013805100000126913,
+    "per_sample_bs16_bucketed": 0.003160755078125632
+  },
+  "time_lzma": {
+    "per_sample": 3.680000008898787e-05
+  },
+  "history": [
+    {
+      "epoch": 20,
+      "loss": 4.250857770442963,
+      "train_byte_acc": 0.09577737782085007,
+      "train_file_match": 0.0,
+      "test_byte_acc": 0.06844473255697296,
+      "test_file_match": 0.0,
+      "sec": 80.6
+    },
+    {
+      "epoch": 40,
+      "loss": 2.845605581998825,
+      "train_byte_acc": 0.23965111449536203,
+      "train_file_match": 0.03125,
+      "test_byte_acc": 0.059936409449061964,
+      "test_file_match": 0.0,
+      "sec": 161.0
+    },
+    {
+      "epoch": 60,
+      "loss": 1.7319599948823452,
+      "train_byte_acc": 0.5291430153675758,
+      "train_file_match": 0.0625,
+      "test_byte_acc": 0.04861127188819176,
+      "test_file_match": 0.0,
+      "sec": 241.3
+    },
+    {
+      "epoch": 80,
+      "loss": 0.4428250752389431,
+      "train_byte_acc": 0.9261802575107296,
+      "train_file_match": 0.359375,
+      "test_byte_acc": 0.0388951913504503,
+      "test_file_match": 0.0,
+      "sec": 322.3
+    },
+    {
+      "epoch": 100,
+      "loss": 0.034464817494153976,
+      "train_byte_acc": 0.9999723106742351,
+      "train_file_match": 0.984375,
+      "test_byte_acc": 0.038324111159987344,
+      "test_file_match": 0.0,
+      "sec": 403.0
+    },
+    {
+      "epoch": 120,
+      "loss": 0.011434412095695734,
+      "train_byte_acc": 1.0,
+      "train_file_match": 1.0,
+      "test_byte_acc": 0.0384360120081186,
+      "test_file_match": 0.0,
+      "sec": 483.6
+    }
+  ]
+}
